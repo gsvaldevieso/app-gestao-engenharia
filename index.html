@@ -59,11 +59,12 @@
     <script src="lib/ionicuirouter/ionicUIRouter.js"></script>
     -->
 
-  <script>
+  <script type="text/javascript">
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
         navigator.serviceWorker.register('pwabuilder-sw/pwabuilder-sw.js');
-    });
+      });
+    }
   </script>
   
   </head>
