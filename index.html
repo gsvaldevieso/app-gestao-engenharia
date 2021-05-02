@@ -59,6 +59,13 @@
     <script src="lib/ionicuirouter/ionicUIRouter.js"></script>
     -->
 
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('<add-path-here>/pwabuilder-sw.js');
+    });
+  </script>
+  
   </head>
   <body ng-app="app" animation="slide-left-right-ios7">
   <div>
